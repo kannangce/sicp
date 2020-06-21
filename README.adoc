@@ -1,0 +1,7 @@
+# sicp
+
+Meant to contain the sicp exercises that I practice in Clojure.
+
+Not meant to contain all the examples, only those that I find not apparent.
+
+The will be individual folder for each chapter under link:src/sicp/[here], which contains files for individual problems.d
