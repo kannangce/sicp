@@ -1,5 +1,5 @@
-; (ns ch1.1-7)
-; This performs better than the example 1_1_7.cl
+(ns sicp.ch1.c1e7v2)
+; This performs better than the example c1e7v1.cl
 ; Probably that in the earlier example, the good-enough?
 ; condition was never met for huge numbers there by giving a stackoverflow error.
 

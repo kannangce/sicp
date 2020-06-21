@@ -1,4 +1,6 @@
-; (ns ch1.p1-12)
+(ns sicp.ch1.c1e12)
+
+;; Exercise 1.12 generate and print a pascal triangle recursively.
 
 (defn next-elem
   "Gets the next row in the pascal triangle for the given current row"

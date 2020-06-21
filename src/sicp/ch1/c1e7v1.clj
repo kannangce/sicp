@@ -1,4 +1,4 @@
-; (ns ch1.1-1-7)
+(ns sicp.ch1.c1e7v1)
 ;; Solution for 1.7 basic version
 
 (defn square
