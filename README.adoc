@@ -5,3 +5,10 @@ Meant to contain the sicp exercises that I practice in Clojure.
 Not meant to contain all the examples, only those that I find not apparent.
 
 The will be individual folder for each chapter under link:src/sicp/[here], which contains files for individual problems.d
+
+
+## Structure:
+
+- Each chapter problems will be under namespace `sicp.ch<chapter_number>`.
+- And practice of sections will be under file `c<chapter_number>s<section_number>.clj`
+- Programs of exercise problem will be under file `c<chapter_number>e<section_number>.clj`

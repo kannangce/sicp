@@ -22,7 +22,7 @@
   [row total-row-length]
   (let [curr-row-len (count row)
         start-at (- total-row-length curr-row-len)
-        separator " "]
+        separator "  "]
     (dotimes [_ start-at] (print separator))
     (doseq [n row] (print (str n separator)))
     (println "")))
@@ -39,4 +39,4 @@
   (-> (build-triangle n)
       (print-triangle)))
 
-(pascal-triangle 5)
+(pascal-triangle 50)
