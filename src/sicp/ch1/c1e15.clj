@@ -27,4 +27,7 @@
 (sine (deg->radian 90))
 
 (sine 12.15)
-(deref counts)                                              ;; P is getting called 4 times.
+(deref counts)
+
+;; P is getting called 4 times.
+
