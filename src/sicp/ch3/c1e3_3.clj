@@ -21,12 +21,18 @@
   (let [account (atom {:balance balance
                        :secret  secret-password})]
     (defn dispatch
-      [arg]
-      (cond (= arg :withdraw)
-            #(update-account-balance! account (withdraw (:balance @account) %))
-            (= arg :deposit)
-            #(update-account-balance! account (deposit (:balance @account) %))))))
+      [password arg]
+      (if (= password secret-password)
+        (cond (= arg :withdraw)
+              #(update-account-balance! account (withdraw (:balance @account) %))
+              (= arg :deposit)
+              #(update-account-balance! account (deposit (:balance @account) %)))
+        (fn [& args] "Incorrect password")))))
 
 
+(def A (make-account 1000 "1"))
 
+((A "1" :withdraw) 100)
 
+(defn -main [args]
+  print "test")
